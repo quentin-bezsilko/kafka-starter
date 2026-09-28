@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "Supplier",
+  "namespace": "com.qbe.avro",
+  "fields": [
+    {
+      "name": "productId",
+      "type": "string"
+    },
+    {
+      "name": "supplierId",
+      "type": "string"
+    },
+    {
+      "name": "supplierName",
+      "type": "string"
+    },
+    {
+      "name": "supplierCountry",
+      "type": "string"
+    },
+    {
+      "name": "lastUpdatedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}
